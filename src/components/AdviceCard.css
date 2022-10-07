@@ -1,0 +1,112 @@
+.card-container {
+  width: 600px;
+  height: 380px;
+  background: #313A49;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+  position: relative;
+  /*box-shadow: #fff 0px 7px 29px 0px;*/
+}
+
+.advice-index {
+  color: #52FFA8;
+  text-transform: uppercase;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  margin: 48px 0 38px 0;
+  position: absolute;
+  top: 16px;
+}
+
+.advice-text {
+  color: #CEE3E9;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 25px;
+  gap: 16px;
+  text-align: center;
+  padding: 16px 20px;
+}
+
+.divider {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: absolute;
+  bottom: 70px;
+}
+
+.line {
+  background-color: #CEE3E9;
+  width: 205px;
+  height: 2px;
+  margin: auto;
+}
+
+.btn {
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  border-radius: 50%;
+  background: #52FFA8;
+  border: none;
+  position: absolute;
+  bottom: -30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .6;
+}
+
+.btn:active {
+  box-shadow: #52FFA8 0px 5px 15px;
+}
+
+.dice-icon {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(18, 17, 17, 0.8);
+  color: #52FFA8;
+  text-align: center;
+  display: flex;
+  font-size: 1.75rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    width: 320px;
+    height: 320px;
+  }
+
+  .advice-index {
+    margin: 32px 0;
+  }
+
+  .advice-text {
+    font-size: 1.25rem;
+  }
+
+  .line {
+    width: 110px;
+  }
+}
